@@ -8,6 +8,10 @@ def index():
    print('Request for index page received')
    return render_template('index.html')
 
+@app.route('/cat')
+def cat():
+    return "Hola mundo"
+
 
 @app.route('/hello', methods=['POST'])
 def hello():
